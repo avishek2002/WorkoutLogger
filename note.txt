@@ -1,0 +1,37 @@
+workout-logger/          <-- Root project folder
+│
+├── pom.xml              <-- Maven project file with dependencies and plugins
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── yourdomain/
+│   │   │           ├── WorkoutLoggerApplication.java   <-- Main Spring Boot app class
+│   │   │           ├── controller/                     <-- REST API controllers
+│   │   │           │   └── WorkoutController.java
+│   │   │           ├── service/                        <-- Business logic services
+│   │   │           │   └── WorkoutService.java
+│   │   │           ├── repository/                     <-- Data repository interfaces
+│   │   │           │   └── WorkoutRepository.java
+│   │   │           └── model/                          <-- Domain entities (JPA)
+│   │   │               └── Workout.java
+│   │   │
+│   │   ├── resources/
+│   │   │   ├── application.properties                  <-- Config file for database, etc.
+│   │   │   ├── static/                                  <-- Static web resources (if any)
+│   │   │   └── templates/                               <-- Server-side templates (optional)
+│   │
+│   └── test/
+│       ├── java/
+│       │   └── com/
+│       │       └── yourdomain/
+│       │           └── WorkoutLoggerApplicationTests.java  <-- Unit/integration tests
+│       └── resources/
+│
+└── frontend/             <-- Your React app folder (outside Java src)
+    ├── node_modules/
+    ├── public/
+    ├── src/
+    ├── package.json
+    └── README.md
